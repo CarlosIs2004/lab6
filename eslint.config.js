@@ -4,7 +4,7 @@ export default[
         files:['**/*.js'],
         languageOptions:{
             ecmaVersion: 'latest',
-            SourceType:'module'
+            sourceType:'module'
         },
         rules:{
             semi:['error', 'always'],
