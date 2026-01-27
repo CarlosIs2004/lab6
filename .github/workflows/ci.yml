@@ -9,23 +9,23 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-    -name: Clonar el repositorio
-    uses: actions/checkout@v2
+      -name: Clonar el repositorio
+      uses: actions/checkout@v2
 
-    -name: Configurar Node.js
-    uses: actions/setup-node@v2
-    with:
-          node-version: '20'
+      -name: Configurar Node.js
+      uses: actions/setup-node@v2
+      with:
+            node-version: '20'
 
-    -name: Instalar dependencias
-    run: npm install
+      -name: Instalar dependencias
+      run: npm install
 
-    -name: Lint del codigo
-    run: npm run lint
+      -name: Lint del codigo
+      run: npm run lint
 
-    -name: Ejecutar pruebas
-    run: npm test
+      -name: Ejecutar pruebas
+      run: npm test
 
-    -name: simular despliegue
-    run: |
-      echo "Despliegue simulado: La aplicación pasa el lint y las pruebas correctamente."
+      -name: simular despliegue
+      run: |
+        echo "Despliegue simulado: La aplicación pasa el lint y las pruebas correctamente."
