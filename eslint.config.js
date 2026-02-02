@@ -1,4 +1,3 @@
-
 export default[
     {
         files:['**/*.js'],
@@ -12,4 +11,4 @@ export default[
         }
     }
 
-]
+];
